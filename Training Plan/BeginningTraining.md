@@ -1,6 +1,6 @@
 # Basic training Schedule
 
-## First Meeting:
+## First Week:
  - [ ] Install software
   - [WPI VS Code](https://github.com/wpilibsuite/allwpilib/releases)
   - FRC Update (Driver Station)
@@ -10,13 +10,17 @@
  - [ ] Demo of basic driving robot code
   - Start with OI and subsystem created, including default command defined
   - Talk through what is required as input to drive a robot
-  - Let students drive the robot
 
-## Second Meeting:
+### Projects
+- Hello World!
+   - Explore printing other things
+
+## Second Week:
  - [ ] Comments
   - Explain comments
   - Add single line comment inside drive command
   - Add multi-line function comment for drive command
+ - Basic input (Project)
  - [ ] Variables
   - `int`
     - Whole numbers, integars are passed to create motor controllers
@@ -34,17 +38,14 @@
   - `if`
     - Implement deadband in drive command
     - Reduce turning speed at higher forward speed
-
-## Third Meeting:
- - [ ] Create console programs / Review
-  - Hello world!
-    - Explore printing other things
-  - Basic input
-    - Ask for users name, greet them
-    - Ask users age, print "You can drive" / "You can't drive" as appropriate
-      - Accept floating point age, print "You can drive with supervision" if they're older than 15.5
-    - Write program that prints the square of a number
-  - Write a 4 function calculator (Advanced)
+  ### Projects
+   - Basic input
+     - Ask for users name, greet them
+     - Ask users age, print "You can drive" / "You can't drive" as appropriate
+       - Accept floating point age, print "You can drive with supervision" if they're older than 15.5
+     - Write program that prints the square of a number
+## Third Week:
+ - Write a functional calculator (Project)
  - [ ] Arrays
   - Review syntax
  - [ ] Loops
@@ -58,10 +59,20 @@
   - Add averaging to driver input
   - This is a Low Pass Filter
   - Explore how increasing the window size (# of samples) slows response
-
-## Fourth Meeting:
- - [ ] Functions
-  - Way of encapsulating code that is re-used
+ ### Projects
+- [ ] Create console programs / Review
+  - Write a 2 function calculator
+  - Write a 4 function calculator (Advanced)
+## Fourth Week:
+- Git, git etiquette, and how to run robot code
+Workflow and bug fixing (TEACH BRANCHING IN PREP FOR FUNCTIONS)
+(- [ ] Averaging Robot exercise
+  - Add averaging to driver input
+  - This is a Low Pass Filter
+  - Explore how increasing the window size (# of samples) slows response
+- deadbanding )
+FUNCTIONS
+ - Way of encapsulating code that is re-used
     - 3 Components
       - Type
       - Name
@@ -76,10 +87,13 @@
     - Square function
     - Min function
     - Max function
- - [ ] Cover git if there's time remaining
 
 
-## Fifth Meeting
+ ### Projects
+     - Revisit other projects and rewrite the code to make it shorter (Calculator)
+
+
+## Fifth Week:
  - [ ] Classes
   - Hold information (Member variables) and functionality (methods) that are related
   - We've already seen classes
@@ -95,6 +109,11 @@
       - Values [-1,1]
       - Getters / Setters
       - Stop convenience feature
+
+ ### Projects
+  - Demonstrate motors on offaxis
+
+## Sixth Week:
  - [ ] Inheritance
   - Classes `extend` other classes
   - Used to consolidate shared information/functionality
@@ -111,9 +130,10 @@
       - Left and Right `Motor`
       - Following WPILib model
       - Show usage with different combinations of `Motor` and `MotorGroup`
-
-## Sixth Meeting
- - Explore classes used so far
+  ### Projects
+   - Bring robot back out and code imputs
+## Seventh Week:
+  - Explore classes used so far
   - Subsystem
   - Drive
   - SpeedController
@@ -124,6 +144,16 @@
     - Add interface definition
     - Fill in behavior in custom robot map
     - Get value from robot map in Drive Subsystem
+ ### Projects
+  - Make mock subsystem
+## Eighth Week:
+-For weeks 8-10 we will have students rotate through different subsystems, doing a drive-train, arm/intake, and auto/led (auto varries for every game so preparing them for auto will be difficult) 
+-(This will be a shortened "remake" of frostbite, teaching students how we got to the early stages of our code)
+-To make this work we need to teach the students how to write commands, how to make a subsystem, and mapping
+-we also need to teach them what each subsystem does and the basics of each subsystems code (ex. for arm rotate teach them that they need a motor but they have to figure out how to make it rotate) 
+-we need just enough for the different subsystems to work we can improve the students skills during build season by making the full subsystem
+## Ninth Week:
+## Tenth Week:
 
 ## Filler Material
 For when the going gets tough and there isn't enough material to fill the time
@@ -138,7 +168,6 @@ For when the going gets tough and there isn't enough material to fill the time
     1. Open PR
     1. Ask fellow student to review PR
     1. Ask mentor to merge PR
-
  - [ ] Enums
   - Creates a new variable type that has limited named values
   - Example Lift heights for elevator
